@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Example</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content1"
+      "sidebar content2"
+      "footer footer";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .header {
+    grid-area: header;
+    background-color: #39ff14;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #39ff14;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    height: 300%;
+  }
+  .content1 {
+    grid-area: content1;
+    background-color: #39ff14;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 700px;
+  }
+  .content2 {
+    background-color: #39ff14;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 25%;
+    margin: 20px;
+
+  }
+  .content3 {
+    background-color: #39ff14;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 25%;
+    margin: 20px;
+
+  }
+  .content-row {
+    display: flex;
+    gap: 10px;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #39ff14;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 250px;
+    width: 70%;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="sidebar">Side Bar</div>
+  <div class="content1">Content 1</div>
+  <div class="content-row">
+    <div class="content2">Content 2</div>
+    <div class="content3">Content 3</div>
+  </div>
+  <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>
